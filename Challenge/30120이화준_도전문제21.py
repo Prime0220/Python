@@ -22,7 +22,7 @@ print('--' * 45 )
 #           그렇지 않은 수가 입력되면 " 평년 "이라는 문자열을 반환하는 함수를 만든다.
 
 def Yearchk(year) :
-    if year % 4 == 0 :
+    if year % 4 | year % 4 & year % 100 & year % 400 == 0 :
         yearname = "윤년입니다. "
     else :
         yearname = "평년입니다. "
